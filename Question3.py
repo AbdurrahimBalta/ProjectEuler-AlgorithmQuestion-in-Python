@@ -2,7 +2,7 @@
 #What is the largest prime factor of the number 600851475143 ?
 #13195 sayısının asal bölenleri 5-7-13-29 dur buna göre aşşağıdaki sayının en büyük asal böleni nedir
 
-Sayi : int = 45
+Sayi : int = 600851475143
 AsalBolen : int = 2
 Dizi = list()
 #Sayinin tüm asal bölenleri bulunur
@@ -14,9 +14,4 @@ while Sayi >= AsalBolen:
         AsalBolen += 1
 print(Dizi)
 print(Dizi[len(Dizi)-1])
-ali : str = "ana"
-print(ali)
-print(ali[::-1])
-if(ali == ali[::-1])
-    print(1)
 
