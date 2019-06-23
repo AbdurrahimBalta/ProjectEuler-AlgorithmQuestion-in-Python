@@ -14,4 +14,9 @@ while Sayi >= AsalBolen:
         AsalBolen += 1
 print(Dizi)
 print(Dizi[len(Dizi)-1])
+ali : str = "ana"
+print(ali)
+print(ali[::-1])
+if(ali == ali[::-1])
+    print(1)
 
