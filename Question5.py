@@ -1,28 +1,26 @@
 # 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 # What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 """1’den 20’ye kadar olan sayılara eşit olarak bölünebilen en küçük pozitif sayıyı bulan algoritma"""
-"""
-IlkSayi: int = 5
-DegisenSayi: int = 4
-EnKucukAsalSayi: int = 2
-EnKucukAsalSayi2: int = 2
+def obeb(sayi1,sayi2):
 
-while DegisenSayi != 1:
-    if IlkSayi % EnKucukAsalSayi == 0:
-        IlkSayi /= EnKucukAsalSayi
-    else:
-        EnKucukAsalSayi += 1
-    if DegisenSayi % EnKucukAsalSayi2 == 0:
-        DegisenSayi /= EnKucukAsalSayi2
-    else:
-        EnKucukAsalSayi += 1
-    if EnKucukAsalSayi == IlkSayi:
-        IlkSayi = IlkSayi * DegisenSayi
-        DegisenSayi -= 1
-        EnKucukAsalSayi = 2
-        EnKucukAsalSayi2 = 2
+    for i in range(int((sayi1+sayi2)/2),0,-1): #Başlangıç değerinin s1+s2 olmasının nedeni iki sayının toplamının yarısı her türlü küçük olan sayıya
+         if sayi1 % i == 0 and sayi2 % i == 0:      #Büyük eşit durumunda olacaktır ve döngüyü kısaltmak amaçlanmıştır
 
-print(IlkSayi)
+            break
+    return i
 
-"""
-#Çözemedim hacılar daha
+def okek(sayi1,sayi2):
+
+    okek = (sayi1*sayi2) / obeb(sayi1,sayi2) # Okek = sayılar çarpımı bölü obeb
+    print(okek)
+    return okek
+
+GenelEkok : int = 0
+a : int = 1
+b : int = 2
+while b <= 20:
+    a = okek(a,b)
+    b += 1
+print(a)
+
+
