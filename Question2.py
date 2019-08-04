@@ -7,13 +7,16 @@ Ortanca_Fibon_Deger: int = 1
 Son_Fibon_Deger : int = 0
 i : int = 0
 while (Ilk_Fibon_Deger <4000000 and Ortanca_Fibon_Deger < 4000000):
+
     Son_Fibon_Deger = Ilk_Fibon_Deger + Ortanca_Fibon_Deger
     Ortanca_Fibon_Deger = Son_Fibon_Deger
     Ilk_Fibon_Deger = Ortanca_Fibon_Deger + Ilk_Fibon_Deger
+
     if Ilk_Fibon_Deger % 2 == 0 and Ortanca_Fibon_Deger % 2 == 0:
         i += Ilk_Fibon_Deger
     elif Ilk_Fibon_Deger % 2 == 0:
         i += Ilk_Fibon_Deger
     elif Ortanca_Fibon_Deger % 2 == 0:
         i += Ortanca_Fibon_Deger
+
 print(i)
