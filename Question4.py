@@ -4,7 +4,7 @@
 IlkSayi: int = 100
 SonSayi: int = 999
 PalDizi = list()
-
+#3 haneli en büyük palindroimk sayıyı bulan algoritma
 while SonSayi >= IlkSayi:
     PalindromSayi: str = str(SonSayi * IlkSayi)
 
