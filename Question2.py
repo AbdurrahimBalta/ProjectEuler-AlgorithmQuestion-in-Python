@@ -6,6 +6,7 @@ Ilk_Fibon_Deger: int = 1
 Ortanca_Fibon_Deger: int = 1
 Son_Fibon_Deger : int = 0
 i : int = 0
+# 4 milyondan küçük tüm çift fibon değerler
 while (Ilk_Fibon_Deger <4000000 and Ortanca_Fibon_Deger < 4000000):
 
     Son_Fibon_Deger = Ilk_Fibon_Deger + Ortanca_Fibon_Deger
