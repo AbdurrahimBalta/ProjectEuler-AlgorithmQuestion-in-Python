@@ -19,7 +19,7 @@ for i in range(3,2000000,2):
         print(i)
         ToplamAsalSayi.append(i)
         print(ToplamAsalSayi)
-#Eğer soruyu yanlış anlayıp ilk 2 milyon asal sayının toplamını merak ederseniz aşşağıdaki
+#Eğer soruyu yanlış anlayıp ilk 2 milyon asal sayının toplamını merak ederseniz aşşağıdaki.
 #Algoritmayı anlamak için önce Erostosthenes kalburu sonrasında wheel factorization aramalarıyla
 #Bir fikriniz olabilir. Şahsen ben yinede anlamadım:)
 """
